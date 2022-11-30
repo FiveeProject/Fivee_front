@@ -1,0 +1,214 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #cbcdce 20.62%, #dddee0 79.61%);
+}
+.cabecalho-imagem{
+  width: 105px;
+
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background: linear-gradient(68.15deg, #121e2c 16.62%, #030c27 85.61%);
+  border: 0px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 20px;
+}
+
+#txtBusca {
+  float: left;
+  padding-left: 5px;
+  font-size: 12px;
+  border: none;
+  height: 32px;
+  width: 191px;
+  border-radius: 1rem;
+}
+
+#btnBusca {
+  border: none;
+  float: left;
+  height: 34px;
+  border-radius: 0 7px 7px 0;
+  width: 70px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.cabecalho-menu-item {
+  color: white;
+  font-weight: 400;
+  font-size: large;
+}
+-----------------------------------------------------------------------------------------------------------------------
+  .conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #fff2e7;
+}
+.conteudo-principal {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  word-spacing: 4px;
+
+  gap: 32px;
+}
+.conteudo-principal-imagem {
+  height: 500px;
+}
+.sobrenos_titulo {
+  font-size: 250%;
+}
+.sobrenos_paragrafo {
+  font-size: 200%;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-family: "Comic Sans";
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  align-items: center;
+
+  background-image: url("/img/festa03.jpg");
+  border-radius: 1rem;
+  flex-direction: column;
+  height: 600px;
+  text-align: center;
+  font-size: 100%;
+  width: 70%;
+  margin-top: 4rem;
+  display: block;
+}
+.conteudo-secundario {
+  background-image: url("/img/floresta.jpg");
+  border-radius: 1rem;
+  height: 900px;
+}
+.conteudo-secundario-paragrafo {
+  border-top: 0.4px solid #fff2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 250%;
+  padding-bottom: 0px;
+  color: black;
+  background-color: rgb(174, 177, 180);
+}
+
+.btn-ingressoindex {
+  color: var(--color-grey-dark-1);
+  display: inline-block;
+  font-size: 120%;
+  font-weight: 530;
+  padding: 0.2rem 2rem;
+  border-radius: 60px;
+  background-color: rgb(53, 65, 235);
+  border: solid 1px rgba(172, 149, 21, 0.089);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.row {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 17, 19);
+  background-color: initial;
+  font-size: 110%;
+}
+.row2 {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 17, 19);
+  background-color: initial;
+  font-size: 110%;
+}
+.card {
+  border-radius: 1rem;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 30px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+  border-left: 3.5px solid #4895ff;
+  background-color: rgb(174, 177, 180);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  float: right;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.conteudo-terciario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 39px;
+}
+
+.conteudo-terciario-titulo {
+  border-top: 0px solid #fff2e7;
+  font-size: 250%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(174, 177, 180);
+}
+
+.conteudo-terciario-escrito {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  text-align: justify;
+}
+
+.imagem_hands {
+  width: 300px;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+-----------------------------------------------------------------------------------------------------------------------
+  footer {
+  background-color: #020a20;
+}
+.rodape {
+  border-top: 0.4px solid #fff2e7;
+  padding: 10px;
+  background-color: #020a20;
+}
+.rodape-imagem {
+  height: 42px;
+  display: block;
+  margin: 0 auto;
+}
