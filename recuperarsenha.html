@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/Login.css" />
     <title>Fivee</title>
+    <script>
+        function funcao1()
+        {
+        alert("Foi enviado um link para recuperação de senha para o seu e-mail");
+        }
+        </script>
   </head>
 
   <body>
@@ -13,7 +19,7 @@
 
       <div class="header-icons d-flex">
         <a class="cabecalho-menu-item" href="/evento.html">Eventos</a>
-        <a class="cabecalho-menu-item">Suporte</a>
+       <!-- <a class="cabecalho-menu-item">Suporte</a>-->
         <img src="icons\user.svg" alt="Logo" width="24" />
       </div>
     </header>
@@ -29,37 +35,24 @@
 
         </div>
         <div class="dist-recomendacao">
-          <h2>LOGIN</h2>
+          <h2>Recuperação de senha</h2>
           <br /><br />
-          <input class="user-field" type="text" id="usuario" placeholder="  Usuário"/>
+          <input class="user-field" type="text" id="txtBusca" placeholder="  E-mail cadastrado"/>
           <br /><br />
-          <input class="user-field" type="password" id="senha" placeholder="  Senha"/>
           <br /><br />
-          <input class = "btn-entrar"type="submit" value="Entrar" onclick="login()">
+          <a href="Login.html"><input class = "btn-entrar"type="submit" onclick="funcao1()" value="Enviar"> </a>
           <!--   <div class="d-flex bb-container">
            
           </div> --> 
           <br />
           <br />
         </div>
-        <a href="recuperarsenha.html" class="classe2">
+       <!-- <a href="Recuperarsenha.html" class="classe2">
           Esqueceu a senha?
         </a>
-        <a href="register.html" class="classe2">
+        <a href="Registre-se.html" class="classe2">
           Não possuo uma conta
         </a><br />
-        <br />
+        <br />-->
         <div class="line"></div>
       </section>
-
-      <div style="height: 30px"></div>
-      <script src="scripts/login.js"></script>
-    </main>
-    <footer
-      class="rodape"
-      style="background: #2032b8; padding: 12px; text-align: center"
-    >
-      <p style="color: #fff">Fivee</p>
-    </footer>
-  </body>
-</html>

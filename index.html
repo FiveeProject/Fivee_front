@@ -11,15 +11,15 @@
 <body>
 
 	<header class="cabecalho">
-		<img class="cabecalho-imagem" src="img\logo1.png" alt="Logo">
+		<a href="index.html"><img class="cabecalho-imagem" src="img\logo1.png" alt="Logo"></a>
 		<nav class="cabecalho-menu">
 			<div id="divBusca">
 			<input type="text" id="txtBusca" placeholder="Buscar evento..."/>
 			<button id="btnBusca">🔎</button>
 			</div>
-			<a class="cabecalho-menu-item">Eventos</a>
+			<a class="cabecalho-menu-item" href="listaEventos.html">Eventos</a>
 			<a class="cabecalho-menu-item">Suporte</a>
-			<a class="cabecalho-menu-item">Login</a>
+			<a class="cabecalho-menu-item" href="login.html">Login</a>
 		</nav>
 	</header>
 	
@@ -39,93 +39,31 @@
 		<h1 class="conteudo-secundario-paragrafo"> Eventos Populares</h1>
 
 		<section class="conteudo-secundario">
-			<div class="row" >
-
+			<div class="row" id="cardsEventos1">
 				<div class="card">
 					<img class="image" src="img\gunsnroses.jpg" />
-				  <h2>Guns n Roses</h2>
-				  <p>22/06 - 21:00</p>
-				  <p>Local:</p>
-				  <p>Av Amanzonas 7654</p>
-				  <p> Pongelupe</p>
-				  <button class="btn-ingressoindex">Ingresso</button>
-
-				  
+				  	<h2>Guns n Roses</h2>
+				  	<p>22/06 - 21:00</p>
+				  	<p>Local:</p>
+				  	<p>Av Amanzonas 7654</p>
+				  	<p> Pongelupe</p>
+				  	<button class="btn-ingressoindex">Ingresso</button>
 				</div>
-				
+			</div>
+
+			<div class="row2" id="cardsEventos2">
 				<div class="card">
 					<img class="image" src="img\gunsnroses.jpg" />
-
-				  <h2>Guns n Roses</h2>
-				  <p>22/06 - 21:00</p>
-				  <p>Local:</p>
-				  <p>Av Amanzonas 7654</p>
-				  <p> Pongelupe</p>
-				  <button class="btn-ingressoindex">Ingresso</button>
-
-				  
+				  	<h2>Guns n Roses</h2>
+				  	<p>22/06 - 21:00</p>
+				  	<p>Local:</p>
+				  	<p>Av Amanzonas 7654</p>
+				  	<p> Pongelupe</p>
+				  	<button class="btn-ingressoindex">Ingresso</button>
 				</div>
-
-				<div class="card">
-					<img class="image" src="img\gunsnroses.jpg" />
-
-				  <h2>Guns n Roses</h2>
-				  <p>22/06 - 21:00</p>
-				  <p>Local:</p>
-				  <p>Av Amanzonas 7654</p>
-				  <p> Pongelupe</p>
-				  <button class="btn-ingressoindex">Ingresso</button>
-
-				  
-				</div>
-		   </div>
-		   <div class="row2" >
-			<div class="card">
-				<img class="image" src="img\gunsnroses.jpg" />
-
-			  <h2>Guns n Roses</h2>
-			  <p>22/06 - 21:00</p>
-			  <p>Local:</p>
-			  <p>Av Amanzonas 7654</p>
-			  <p> Pongelupe</p>
-			  <button class="btn-ingressoindex">Ingresso</button>
-
-			  
-			</div>
-			
-			<div class="card">
-				<img class="image" src="img\gunsnroses.jpg" />
-
-			  <h2>Guns n Roses</h2>
-			  <p>22/06 - 21:00</p>
-			  <p>Local:</p>
-			  <p>Av Amanzonas 7654</p>
-			  <p> Pongelupe</p>
-			  <button class="btn-ingressoindex">Ingresso</button>
-
-			  
 			</div>
 
-			<div class="card">
-				<img class="image" src="img\gunsnroses.jpg" />
-
-			  <h2>Guns n Roses</h2>
-			  <p>22/06 - 21:00</p>
-			  <p>Local:</p>
-			  <p>Av Amanzonas 7654</p>
-			  <p> Pongelupe</p>
-			  <button class="btn-ingressoindex">Ingresso</button>
-
-			  
-			</div>
-	   </div>
-				
 		</section>
-
-
-
-
-
 		<h2 class="conteudo-terciario-titulo"> Encontre Pessoas</h2>
 
 		<section class="conteudo-terciario">
@@ -145,7 +83,8 @@
 		<img class="rodape-imagem" src="img\logo1.png" alt="Logo">
 
 	</footer>
-
+	<script src="scripts/index.js"></script>
+	<script src="scripts/evento.js"></script>
 </body>
 
 </html>

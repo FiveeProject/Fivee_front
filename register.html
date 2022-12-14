@@ -9,7 +9,7 @@
 
   <body>
     <header class="cabecalho d-flex">
-      <img class="cabecalho-imagem" src="img\logo1.png" alt="Logo">
+      <a href="index.html"><img class="cabecalho-imagem" src="img\logo1.png" alt="Logo"></a>
 
       <div class="header-icons d-flex">
         <a class="cabecalho-menu-item" href="/evento.html">Eventos</a>
@@ -17,52 +17,64 @@
         <img src="icons\user.svg" alt="Logo" width="24" />
       </div>
     </header>
-<script>
-  function onlynumber(evt) {
-   var theEvent = evt || window.event;
-   var key = theEvent.keyCode || theEvent.which;
-   key = String.fromCharCode( key );
-   //var regex = /^[0-9.,]+$/;
-   var regex = /^[0-9.]+$/;
-   if( !regex.test(key) ) {
-      theEvent.returnValue = false;
-      if(theEvent.preventDefault) theEvent.preventDefault();
-   }
-}
-</script>
+    
     <main class="conteudo d-flex">
- 
-
       <section class="profile d-flex column j-center">
-         <div>
+        <div>
           <img src="img/sem-foto-oficial_1-removebg-preview.png" alt="" />
-
         </div>
         <div class="dist-recomendacao">
           <h2>REGISTRE-SE</h2>
           <br /><br />
-          <input class="user-field" type="text" id="txtBusca" placeholder="  Usuário"/>
+          <input
+            class="user-field"
+            type="text"
+            id="usuario"
+            placeholder="Usuário"
+          />
           <br /><br />
-           <input class="user-field" type="text" id="txtBusca" placeholder="  E-mail"/>
+          <input
+            class="user-field"
+            type="text"
+            id="email"
+            placeholder="E-mail"
+          />
           <br /><br />
-          <input class="user-field" type="tel" onkeypress="return onlynumber();" placeholder="  Telefone"/>
+          <input
+            class="user-field"
+            type="tel"
+            id="telefone"
+            onkeypress="return onlynumber();"
+            placeholder="Telefone"
+          />
           <br /><br />
-          <input class="user-field" type="password" id="txtBusca" placeholder="  Senha"/>
+          <input
+            class="user-field"
+            type="password"
+            id="senha"
+            placeholder="Senha"
+          />
           <br /><br />
-          <input class="user-field" type="password" id="txtBusca" placeholder="  Repita a senha"/>
+          <input
+            class="user-field"
+            type="password"
+            id="senha2"
+            placeholder="Repita a senha"
+          />
           <br /><br />
-          <input class = "btn-entrar"type="submit" value="Proximo">
-       
+          <button class="login-button" type="submit" onclick="register()">
+            Criar conta
+          </button>
+
           <br />
           <br />
         </div>
-            <a href="" class="classe2">
-          Ja possuo uma conta
-        </a><br />
+        <a href="login.html" class="classe2"> Ja possuo uma conta </a><br />
         <br />
         <div class="line"></div>
       </section>
       <div style="height: 30px"></div>
+      <script src="scripts/registre.js"></script>
     </main>
     <footer
       class="rodape"

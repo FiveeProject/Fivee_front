@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="styles/editarPerfil.css" />
+    <title>Fivee</title>
+  </head>
+
+  <body>
+    <header class="cabecalho d-flex">
+      <a href="index.html"><img class="cabecalho-imagem" src="img\logo1.png" alt="Logo"></a>
+
+      <div class="header-icons d-flex">
+        <a class="cabecalho-menu-item" href="/evento.html">Eventos</a>
+        <!--<a class="cabecalho-menu-item">Suporte</a> -->
+        <img src="icons\user.svg" alt="Logo" width="24" />
+      </div>
+    </header>
+
+    <main class="conteudo d-flex">
+      <section class="profile d-flex column">
+        <div>
+          <img src="img/sem-foto-oficial_1-removebg-preview.png" alt="" /></br>
+
+         </div>
+          <input style="font-size: 1.5rem; font-weight: 800;" type="text" id="inputNome" placeholder="  NOME"/> 
+          <br />
+          <input style="font-size: 1.5rem; font-weight: 800; padding-top:1000;" type="text" id="inputCidade" placeholder="  CIDADE"/> </br>
+          <input style="font-size: 1.5rem; font-weight: 800; padding-top:1000;" type="text" id="inputCpf" placeholder="  CPF"/>
+          <br />
+          <br />
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="profile d-flex column j-center">
+        <div class="dist-recomendacao">
+          <h2>DISTÂNCIA DE RECOMENDAÇÃO</h2>
+          <br /><br />
+          <div class="d-flex bb-container">
+            <button  class="blue-box" onclick="setDistancia(this.value)" value=5 >5 km</button>
+            <button  class="blue-box" onclick="setDistancia(this.value)" value=10 >10 km</button>
+            <button  class="blue-box" onclick="setDistancia(this.value)" value=15 >15 km</button>
+            <button  class="blue-box" onclick="setDistancia(this.value)" value=20 >20 km</button>
+            <button  class="blue-box" onclick="setDistancia(this.value)" value=25 >25 km</button>
+          </div>
+          <br />
+          <br />
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="profile d-flex column j-center">
+        <div class="dist-recomendacao">
+          <h2>INTERESSES</h2>
+          <br /><br />
+          <div class="d-flex bb-container">
+            <button class="blue-box" onclick="setInteresse(this.value)" value="Futebol">Futebol</button>
+            <button class="blue-box" onclick="setInteresse(this.value)" value="Artes Marciais">Artes Marciais</button>
+            <button class="blue-box" onclick="setInteresse(this.value)" value="VideoGames">Videogames</button>
+            <button class="blue-box" onclick="setInteresse(this.value)" value="Geek">Geek</button>
+            <button class="blue-box" onclick="setInteresse(this.value)" value="Tecnologia">Tecnologia</button>
+          </div>
+          <br />
+          <br />
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="profile d-flex column j-center">
+        <div class="dist-recomendacao">
+          <h2>GOSTO MUSICAL</h2>
+          <br /><br />
+          <div class="d-flex bb-container">
+            <button class="blue-box" onclick="setGostoMusical(this.value)" value="Rock">Rock</button>
+            <button class="blue-box" onclick="setGostoMusical(this.value)" value="MPB">MPB</button>
+            <button class="blue-box" onclick="setGostoMusical(this.value)" value="Pagode">Pagode</button>
+            <button class="blue-box" onclick="setGostoMusical(this.value)" value="Rap">Rap</button>
+            <button class="blue-box" onclick="setGostoMusical(this.value)" value="Sertanejo">Sertanejo</button>
+          </div>
+          <br />
+          <br />
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <section class="profile d-flex column j-center">
+        <div class="dist-recomendacao">
+          <h2>TIPOS DE EVENTOS</h2>
+          <br /><br />
+          <div class="d-flex bb-container">
+            <button class="blue-box" onclick="setTiposEventos(this.value)" value="Festivais">Festivais</button>
+            <button class="blue-box" onclick="setTiposEventos(this.value)" value="Shows">Shows</button>
+            <button class="blue-box" onclick="setTiposEventos(this.value)" value="Bares">Bares</button>
+            <button class="blue-box" onclick="setTiposEventos(this.value)" value="Feiras">Feiras</button>
+            <button class="blue-box" onclick="setTiposEventos(this.value)" value="Encontros">Encontros</button>
+          </div>
+        </div>
+      </section>
+      <input class = "blue-box" type="submit" value="Salvar" onclick="salvarPerfil()">
+      <div style="height: 30px"></div>
+    </main>
+    <footer
+      class="rodape"
+      style="background: #2032b8; padding: 12px; text-align: center"
+    >
+      <p style="color: #fff">Fivee</p>
+    </footer>
+    <script src="scripts/editarPerfil.js"></script>
+  </body>
+</html>
