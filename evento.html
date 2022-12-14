@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/evento.css" />
     <title>Fivee</title>
+    <script>
+      var counterVal = 0;
+
+function incrementClick() {
+    updateDisplay(++counterVal);
+}
+
+function resetCounter() {
+    updateDisplay(--counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label-normal").innerHTML = val;
+    document.getElementById("counter-label-meia").innerHTML = val;
+    document.getElementById("counter-label-parceiro").innerHTML = val;
+    
+}
+  function total(){
+
+         var num1 = document.getElementById("preco").value;
+         var num2 = document.getElementById("counter-label-normal").value;
+         var mult = num1*num2;
+          document.setElementById("total").innerHTML =mult;    
+  }
+    </script>
   </head>
 
   <body>
@@ -50,65 +75,81 @@
         <div class="card-ingresso-container">
           <h3>INGRESSOS</h3>
           <br />
+      
           <div class="card-ingresso d-flex">
             <div class="d-flex card-ingresso-side" style="font-weight: 600">
-              <p>R$ 10,00</p>
+              <p id="preco">R$ 10,00</p>
               <p>Normal</p>
             </div>
             <div class="d-flex card-ingresso-side">
-              <span
+              <span id="counter-label-normal" onclick="incrementClick(),total()"
                 style="
                   border: 1px solid #414141;
                   border-radius: 12px;
                   padding: 8px 12px;
                 "
-                >1</span
-              >
+                >0</span>
+              
+                <button id="counter-label-normal" onclick="incrementClick()" >+</button>
+                <button id="counter-label-normal" onclick="resetCounter()" >-</button>
+                
               <button>COMPRAR</button>
             </div>
           </div>
           <br />
+
           <div class="card-ingresso d-flex">
             <div class="d-flex card-ingresso-side" style="font-weight: 600">
               <p>R$ 5,00</p>
-              <p>Meia-Entrada</p>
+              <p>Meia entrada</p>
             </div>
             <div class="d-flex card-ingresso-side">
-              <span
+              <span id="counter-label-parceiro" onclick="incrementClick()"
                 style="
                   border: 1px solid #414141;
                   border-radius: 12px;
                   padding: 8px 12px;
                 "
-                >1</span
-              >
+                >0</span>
+              
+                <button id="counter-label-parceiro" onclick="incrementClick()" >+</button>
+                <button id="counter-label-parceiro" onclick="resetCounter()" >-</button>
               <button>COMPRAR</button>
             </div>
           </div>
+          
           <br />
+
+
           <div class="card-ingresso d-flex">
             <div class="d-flex card-ingresso-side" style="font-weight: 600">
               <p>R$ 6,00</p>
               <p>Parceiro</p>
             </div>
+
+
             <div class="d-flex card-ingresso-side">
-              <span
+              
+              <span id="counter-label-meia" onclick="incrementClick()"
                 style="
                   border: 1px solid #414141;
                   border-radius: 10px;
                   padding: 8px 12px;
                 "
-                >1</span
-              >
+                
+                >0</span>
+                <button id="counter-label-meia" onclick="incrementClick()" >+</button>
+                <button id="counter-label-meia" onclick="resetCounter()" >-</button>
+                
               <button>COMPRAR</button>
             </div>
           </div>
           <br />
           <div class="line"></div>
           <br />
-          <div class="total d-flex">
+          <div  class="total d-flex">
             <p></p>
-            <p>Total: R$ 0,00</p>
+            <p id="total">Total: </p>
           </div>
           <br />
 

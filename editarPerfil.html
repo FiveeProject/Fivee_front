@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="editarPerfil.css" />
     <title>Fivee</title>
   </head>
 
@@ -13,7 +14,6 @@
 
       <div class="header-icons d-flex">
         <a class="cabecalho-menu-item" href="/evento.html">Eventos</a>
-        <a class="cabecalho-menu-item" href="/editarPerfil.html">Editar Perfil</a>
         <!--<a class="cabecalho-menu-item">Suporte</a> -->
         <img src="icons\user.svg" alt="Logo" width="24" />
       </div>
@@ -22,12 +22,13 @@
     <main class="conteudo d-flex">
       <section class="profile d-flex column">
         <div>
-          <img src="img/sem-foto-oficial_1-removebg-preview.png" alt="" />
+          <img src="img/sem-foto-oficial_1-removebg-preview.png" alt="" /></br>
 
-          <p style="font-size: 1.5rem; font-weight: 600">Nome</p>
+         </div>
+          <input style="font-size: 1.5rem; font-weight: 800;" type="text" id="txtBusca" placeholder="  nome"/> 
           <br />
-          <p style="font-size: 1rem; font-weight: 500">Cidade</p>
-          <p style="font-size: 1rem; font-weight: 500">(xx) 0 0000-0000</p>
+          <input style="font-size: 1.5rem; font-weight: 800; padding-top:1000;" type="text" id="txtBusca" placeholder="  Cidade"/> </br>
+          <input style="font-size: 1.5rem; font-weight: 800; padding-top:1000;" type="text" id="txtBusca" placeholder="  Telefone"/>
           <br />
           <br />
         </div>
@@ -39,11 +40,11 @@
           <h2>DISTÂNCIA DE RECOMENDAÇÃO</h2>
           <br /><br />
           <div class="d-flex bb-container">
-            <div class="blue-box">5 km</div>
-            <div class="blue-box">10 km</div>
-            <div class="blue-box">25 km</div>
-            <div class="blue-box">50 km</div>
-            <div class="blue-box">100 km</div>
+            <button  class="blue-box">5 km</button>
+            <button  class="blue-box">5 km</button>
+            <button  class="blue-box">5 km</button>
+            <button  class="blue-box">5 km</button>
+            <button  class="blue-box">5 km</button>
           </div>
           <br />
           <br />
@@ -56,11 +57,11 @@
           <h2>INTERESSES</h2>
           <br /><br />
           <div class="d-flex bb-container">
-            <div class="blue-box">Futebol</div>
-            <div class="blue-box">Artes Marciais</div>
-            <div class="blue-box">Videogames</div>
-            <div class="blue-box">Geek</div>
-            <div class="blue-box">Tecnologia</div>
+            <button class="blue-box">Futebol</button>
+            <button class="blue-box">Artes Marciais</button>
+            <button class="blue-box">Videogames</button>
+            <button class="blue-box">Geek</button>
+            <button class="blue-box">Tecnologia</button>
           </div>
           <br />
           <br />
@@ -73,11 +74,11 @@
           <h2>GOSTO MUSICAL</h2>
           <br /><br />
           <div class="d-flex bb-container">
-            <div class="blue-box">Rock</div>
-            <div class="blue-box">MPB</div>
-            <div class="blue-box">Pagode</div>
-            <div class="blue-box">Rap</div>
-            <div class="blue-box">Sertanejo</div>
+            <button class="blue-box">Rock</button>
+            <button class="blue-box">MPB</button>
+            <button class="blue-box">Pagode</button>
+            <button class="blue-box">Rap</button>
+            <button class="blue-box">Sertanejo</button>
           </div>
           <br />
           <br />
@@ -90,15 +91,15 @@
           <h2>TIPOS DE EVENTOS</h2>
           <br /><br />
           <div class="d-flex bb-container">
-            <div class="blue-box">Festivais</div>
-            <div class="blue-box">Shows</div>
-            <div class="blue-box">Bares</div>
-            <div class="blue-box">Feiras</div>
-            <div class="blue-box">Encontros</div>
+            <button class="blue-box">Festivais</button>
+            <button class="blue-box">Shows</button>
+            <button class="blue-box">Bares</button>
+            <button class="blue-box">Feiras</button>
+            <button class="blue-box">Encontros</button>
           </div>
         </div>
       </section>
-
+      <input class = "blue-box" type="submit" value="Salvar">
       <div style="height: 30px"></div>
     </main>
     <footer

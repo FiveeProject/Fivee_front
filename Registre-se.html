@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +14,7 @@
 
       <div class="header-icons d-flex">
         <a class="cabecalho-menu-item" href="/evento.html">Eventos</a>
-        <a class="cabecalho-menu-item">Suporte</a>
+      <!--  <a class="cabecalho-menu-item">Suporte</a> -->
         <img src="icons\user.svg" alt="Logo" width="24" />
       </div>
     </header>
@@ -37,26 +38,28 @@
          <div>
           <img src="img/sem-foto-oficial_1-removebg-preview.png" alt="" />
 
-        </div>
+         
         <div class="dist-recomendacao">
+          
+        
           <h2>REGISTRE-SE</h2>
           <br /><br />
-          <input class="user-field" type="text" id="txtBusca" placeholder="  Usuário"/>
+          <input class="user-field" type="text" name="usuario" id="txtBusca"/>
           <br /><br />
-           <input class="user-field" type="text" id="txtBusca" placeholder="  E-mail"/>
+           <input class="user-field" type="text" name=email id="txtBusca" placeholder="  E-mail"/>
           <br /><br />
-          <input class="user-field" type="tel" onkeypress="return onlynumber();" placeholder="  Telefone"/>
+          <input class="user-field" type="tel" name=telefone onkeypress="return onlynumber();" placeholder="  Telefone"/>
           <br /><br />
-          <input class="user-field" type="password" id="txtBusca" placeholder="  Senha"/>
+          <input class="user-field" type="password" name=senha id="txtBusca" placeholder="  Senha"/>
           <br /><br />
-          <input class="user-field" type="password" id="txtBusca" placeholder="  Repita a senha"/>
+          <input class="user-field" type="password" name=confirmarsenha id="txtBusca" placeholder="  Repita a senha"/>
           <br /><br />
-          <input class = "btn-entrar"type="submit" value="Proximo">
-       
+         <a href="Login.html"> <input class = "btn-entrar"type="submit" value="Proximo"> </a>
+</form>
           <br />
           <br />
         </div>
-            <a href="" class="classe2">
+            <a href="Login.html" class="classe2">
           Ja possuo uma conta
         </a><br />
         <br />
